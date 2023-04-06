@@ -1,0 +1,79 @@
+.body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.d-flex{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: #fff;
+    padding: 20px 30px;
+    width: 320px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+   
+}
+.text-center{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+.form-group{
+    position: relative;
+}
+.form-control{
+   width: 100%;
+   height: 45px;
+   border: 1px solid lightgrey;
+   outline: none;
+   border-radius: 5px;
+   font-size: 14px;
+   transition: all 0.3s;
+}
+#showBtn{
+    position: absolute;
+    right: 2%;
+    top: 35%;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    user-select: none;
+    display: none;
+}
+.inticator{
+    height: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+.inticator span{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: lightgrey;
+    border-radius: 5px;
+    /* display: none !important; */
+}
+.inticator span.weak:before{
+    background-color: #ff4757;
+}
+.inticator span.medium:before{
+    background-color: #e4fc34e2;
+}
+.inticator span.strong:before{
+    background-color: #23ad5c;
+}
+.inticator span.active:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
